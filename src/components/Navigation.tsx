@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import logo from '../assets/ciaovello_logo.png';
+import logo from '../assets/ciaovello_logo.jpg';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,14 +19,13 @@ export default function Navigation() {
   return (
     <nav className="bg-[#FFF8F2] shadow-md sticky top-0 z-50">
       <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-24 2xl:px-32 flex items-center justify-between py-5 relative">
-
         <Link href="/" className="mx-auto md:mx-0">
           <Image
             src={logo}
             alt="Ciao Vello Logo"
             priority
             className="w-16 md:w-20 2xl:w-24 h-auto"
-          />
+          /> 
         </Link>
         <button
   className={`md:hidden text-[2.5rem] leading-none transition-all duration-300 ease-in-out transform ${

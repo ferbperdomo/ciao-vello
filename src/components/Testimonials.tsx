@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { MessageCircle, Quote } from "lucide-react"
+import { MessageCircle, Quote } from "lucide-react";
 
 export default function TestimonialsSection() {
   return (
@@ -95,5 +95,5 @@ export default function TestimonialsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

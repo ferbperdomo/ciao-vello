@@ -1,12 +1,12 @@
-'use client';
+'use client'
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
-import logo from '../assets/ciaovello_logo.jpg';
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
+import logo from '../assets/ciaovello_logo.jpg'
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
     { name: 'Inicio', path: '/' },
@@ -14,7 +14,7 @@ export default function Navigation() {
     { name: 'Blog', path: '/blog' },
     { name: 'Contacto', path: '/contact' },
     { name: 'Citas', path: '/appointments' },
-  ];
+  ]
 
   return (
     <nav className="bg-[#FFF8F2] shadow-md sticky top-0 z-50">
@@ -87,5 +87,5 @@ export default function Navigation() {
         </div>
       )}
     </nav>
-  );
+  )
 }

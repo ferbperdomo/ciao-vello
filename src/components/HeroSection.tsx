@@ -1,8 +1,8 @@
-'use client';
+'use client'
 
-import Image from 'next/image';
-import Link from 'next/link';
-import heroImage from '../assets/hero-image.png';
+import Image from 'next/image'
+import Link from 'next/link'
+import heroImage from '../assets/hero-image.png'
 
 export default function HeroSection() {
   return (
@@ -63,5 +63,5 @@ export default function HeroSection() {
         />
       </div>
     </section>
-  );
+  )
 }

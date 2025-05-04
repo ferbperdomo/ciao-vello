@@ -1,17 +1,17 @@
-import '../styles/globals.css';
-import { DM_Sans } from 'next/font/google';
-import Navigation from '../components/Navigation';
+import '../styles/globals.css'
+import { DM_Sans } from 'next/font/google'
+import Navigation from '../components/Navigation'
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-dm-sans',
-});
+})
 
 export const metadata = {
   title: 'Ciao Vello Studio',
   description: 'Depilación láser con alma en Madrid.',
-};
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -21,5 +21,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
       </body>
     </html>
-  );
+  )
 }
